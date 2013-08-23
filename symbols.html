@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Symbols</title>
+<style>
+#i1 {
+font-size: 28pt;
+//font-family: Arial;
+padding: 60px 0 0 0;
+}
+#k1 {
+background: #000000;
+color: #ffffff;
+width: 50px;
+height: 20px;
+margin: 0 90% 0 0;
+float: left;
+position: absolute;
+}
+#k2 {
+background: #AA0000;
+color: #ffffff;
+width: 50px;
+height: 20px;
+margin: 0 0 0 90%;
+float: left;
+position: absolute;
+}
+</style>
+<script>
+var page=0;
+function ansiii(p) {
+var el=10;
+parseInt(p);
+var ds=document.getElementsByTagName("div")["i1"];
+if(ds.innerHTML.match("#")=="#")
+ds.innerHTML="";
+for(var i=0+(p*el); i<=10+(p*el); i++)
+ds.innerHTML+="#"+i+" - &#"+i+"<br>";
+}
+function stepr() {
+page++;
+ansiii(page);
+}
+function stepl() {
+page--;
+ansiii(page);
+}
+</script>
+</head>
+<body onload="hgfd();">
+<span id="k1" onclick="stepl();"></span>
+<span id="k2" onclick="stepr();"></span>
+<div id="i1"></div>
+</body>
+</html>
